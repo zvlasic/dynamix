@@ -14,7 +14,8 @@ defmodule Dynamix.Application do
       # {Dynamix.Worker, arg}
 
       {Dynamix.CounterDynamicSupervisor, []},
-      {Registry, [keys: :unique, name: @registry]}
+      {Registry, [keys: :unique, name: @registry]},
+      {Dynamix.Starter, []}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
